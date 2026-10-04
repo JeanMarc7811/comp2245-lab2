@@ -2,6 +2,7 @@
     width: 150px;
     height:150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .blog-image{
@@ -9,4 +10,40 @@ width: 200px;
     height: auto;
     float: left;
     margin: 0 20px 10px 0;
+}
+
+.container{
+display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    gap: 40px;
+
+    max-width:1100px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
 }
