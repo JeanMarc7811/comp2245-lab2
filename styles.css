@@ -24,6 +24,10 @@ display: grid;
     max-width:1100px;
     width: 90%;
     margin: 40px auto;
+    background-color: #FFFFFF;
+}
+body {
+    background-color: #EDF2F7;
 }
 
 header {
@@ -34,7 +38,35 @@ header {
     justify-content: center;
     gap: 15px;
     text-align: center;
+    background-color: #2C5282;
+    color:#FFFFFF;
 }
+h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', 'Times New Roman', Times, serif
+}
+
+h2{
+    font-size: 32px;
+    color: #276749;
+}
+
+h3{
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+   color: #276749
+
+}
+
+ul{
+    color:#2B6CB0;
+}
+
+.post-info{
+    color:#4A5568;
+}
+
+
+
 
 main {
     grid-area: main;
@@ -46,4 +78,37 @@ aside {
 
 footer {
     grid-area: footer;
+    background-color: #2C5282;
+    color:#FFFFFF;
 }
+
+article{
+overflow: auto;
+margin-bottom: 40px;
+padding-bottom: 30px
+}
+
+article + article {
+    border-top: 3px solid #ddd;
+    padding-top: 30px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+aside section{
+    margin-bottom: 30px;
+}
+
+aside section:first-child{
+    background-color: #E2E8F0;
+    color:#000000;
+    padding: 20px
+}
+
+aside section:first-child h3{
+    color:#000000;
+}
+
